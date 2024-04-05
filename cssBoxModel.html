@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box Model</title>
+</head>
+<style>
+    p{
+        border: 2px solid rgb(205, 42, 255) ;
+    }
+    #hello{
+        font-size: large;
+        padding-left: 20px;
+        margin-left: 50px ;
+    }
+    #how{
+        font-size: large;
+        padding-top: 50px;
+        margin-top: 40px ;
+    }
+    #fine{
+        font-size: large;
+        padding-right: 10px;
+        margin-right: 30px;
+    }
+    #you{
+        font-size: large;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
+    #mansi{
+        display:inline-block;    /* this is block elemrnt but with the help of this funcation this will display in inline  */
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    #pal{
+        padding: 50px;       /* shorthand property */
+        margin: 50px;
+    }
+
+    #monu{
+        padding: 40px 20px;     /* 40px (top and bottom)  20px(right and left) shorthand property*/
+        margin: 50px 30px;        /* 20px (top and bottom)  30px(right and left) shorthand property*/    
+    }
+
+    #sizing{
+        padding: 50px;
+        width: 200px;
+        box-sizing: content-box;
+    }
+    
+    #size{
+        padding: 50px;
+        width: 200px;
+        box-sizing: border-box;
+    }
+
+    #one{
+        font-size: 30px;
+    }
+    #two{
+        font-size: 30px;
+    }
+    #para1{
+        font-size: 2em;
+    }
+    #para2{
+        font-size: 2rem;
+    }
+
+
+</style>
+<body>
+
+    <p id="hello">Hello whats up!</p>
+    <p id="how">How are you</p>
+    <p id="fine">I am Fine</p>
+    <p id="you">what about you</p>
+    <p id="mansi">Mansi</p>
+    <p id="pal">Pal</p>
+    <p id="monu">Monu</p>
+
+    <hr>
+    <hr>
+
+    <p id="Sizing"> Box Sizing</p>
+    <p id="Size"> Box Sizingg</p>
+    
+    <hr>
+
+    <div id="one">
+        <p id="para1"> Paragraph one</p>
+    </div>
+
+    <div id="two">
+        <p id="para2">paragraph two</p>
+    </div>
+</body>
+</html>

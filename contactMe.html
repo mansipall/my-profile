@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label, button{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        /* attribute selector */
+        input[type="text"], input[type="email"]{
+            border: 2px solid rgb(255, 210, 126);
+            border-radius: 10px;        /* use for curve the border */
+            text-transform: capitalize;     /* use for capital first letter */
+            color: cadetblue;        /* use for input text color */
+        }
+
+        /* here we change the property again......  and the new property will be applied */
+        input[type="email"]{
+            text-transform: lowercase; 
+        }
+        /* this is ":hover" attribute use for focusing when mouse is on text it will get highlighted and focused */
+        button[type="submit"]:hover{
+            color: rgb(121, 4, 101);
+            border-color: rgb(121, 4, 101);
+            border-radius: 10px; 
+
+        }
+        
+        /* this element is use for when you select the text from mouse the color will change  */
+        #lorem::selection{
+            background-color: rgb(255, 203, 166);
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <h2>Contact Me</h2>
+    <form action="">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="">Full Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile Number</label></td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Ask Question</label></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Clear</button></td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </form>
+
+    <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nam, labore velit sint saepe iusto. Harum dolor, optio, saepe magnam voluptatum ullam incidunt ratione magni molestias voluptatem sed iste explicabo asperiores dolores fugiat temporibus. Enim, soluta non illo repellat eligendi reiciendis ab aut, corrupti suscipit, distinctio esse ut iure illum officia consequuntur exercitationem rerum cumque impedit iste quisquam ratione est! Blanditiis culpa amet quidem omnis ullam dolores modi nostrum, labore exercitationem impedit eum quod voluptatibus tenetur consequatur officia quisquam debitis quae, deleniti non repellendus rem. Quia facere tempore sit nulla, exercitationem rem, deleniti velit ducimus inventore sunt ipsum eligendi temporibus!</p>
+</body>
+</html>
